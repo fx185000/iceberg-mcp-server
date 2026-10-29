@@ -38,6 +38,7 @@ def get_schema() -> str:
 
 def main():
     transport = os.getenv("MCP_TRANSPORT", "stdio")
+    mcp.run(transport=transport)
 
 if __name__ == "__main__":
     main()
